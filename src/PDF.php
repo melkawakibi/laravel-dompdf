@@ -125,20 +125,6 @@ class PDF{
     }
 
     /**
-     * returns html
-     *
-     * @param string $view
-     * @param array $data
-     * @param array $mergeData
-     * @param string $encoding Not used yet
-     * @return static
-     */
-    public function parseView($view, $data = array(), $mergeData = array()){
-        return $this->view->make($view, $data, $mergeData)->render();
-
-    }
-
-    /**
      * Set/Change an option in DomPdf
      *
      * @param array $options
